@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+.hero {
+  background: url(../public/images/hero-full.png);
+  background-size: cover;
+  min-height: 500px;
+  color: white;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.flex-center h1 {
+  padding-left: 50px;
+  font-weight: 900;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+.overlay-colour {
+  background: rgb(123, 73, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(123, 73, 255, 1) 0%,
+    rgba(123, 73, 255, 0) 70%
+  );
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+}
+.tagline {
+  padding: 30px;
+  background-color: #7b49ff;
+  color: white;
+  text-align: center;
+}
+.main {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.popular {
+  justify-content: stretch !important;
+  display: flex;
+}
+.popular .col {
+  margin-bottom: 20px;
+  align-self: stretch !important;
+  flex: 1;
+}
+.popular .col .card {
+  height: 100%;
+}
+.footer {
+  background-color: #e4e4e4;
+  padding: 20px;
+}
+.page .row:nth-child(2) {
+  margin-top: 50px;
+}
+.category-ads {
+  display: flex;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+.category-page .card a {
+  text-decoration: none;
+  color: inherit;
+}
+.gig-info-price {
+  font-weight: bold;
+  font-size: 22px;
+}
+.avatar {
+  min-width: 64px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+.flex-h {
+  display: flex;
+  column-gap: 10px;
+}
+.service-page h1 {
+  font-size: 26px;
+}
+.margin-top-20 {
+  margin-top: 20px !important;
+}
+#progress {
+  text-align: center;
+}
+.percentage {
+  font-weight: bold;
+  font-size: 26px;
+}
+.hide {
+  display: none !important;
+}
+#chat-window {
+  min-height: 300px;
+  border: 1px solid #000;
+}
+textarea {
+  border: 1px solid;
+}
+.message {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.name {
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 10px;
+}
+.message .avatar {
+  min-width: 40px;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  background-color: #7b49ff;
+}
+.chat-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.chat-page > .row:nth-child(2) {
+  flex: 1;
+}
+.h-100 {
+  height: 100%;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+chat-container .row:nth-child(3) {
+  flex: 1;
+}
